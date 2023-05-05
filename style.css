@@ -1,0 +1,85 @@
+html, body{
+			margin:0;
+			padding:0;
+			width:100%;
+			height:100%;
+			font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+		}
+		body{
+			background:#3D3D3D;
+		}
+		img{
+			width:100px;
+			transition: width 0.5s ease, height 0.5s ease, margin 0.5s ease;
+		}
+		.wrapper {
+			width:100%;
+			height:100%;
+			text-align:center;
+		}
+		.wrapper a{
+			width:100%;
+			height:100%;
+			display:flex;
+		}
+		.steam, .playstation {
+			position: absolute;
+			height: 100%;
+			width: 65%;
+		}
+		.steam {
+			left: 0;
+			top: 0;
+			background-image: url(keyboard.jpg);
+			background-size:cover;
+			-webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+			clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%); 
+		}
+		.playstation {
+			right: 0;
+			top: 0;
+			background-image: url(joystick.jpg);
+			background-size:cover;
+			-webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+			clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%); 
+		}
+		#steam{
+			margin-left:35%;
+		}
+		#playstation{
+			margin-left:calc( 65% - 100px);
+		}
+		.steam a, .playstation a{
+			background-color:rgba(255,255,255,0.3);
+			transition:background-color 0.5s ease;
+		}
+		.steam a:hover, .playstation a:hover{
+			background-color:rgba(255,255,255,0.25);
+		}
+		.steam a:hover img{
+			width:150px;
+			margin-left:calc(35% - 25px) !important;
+		}
+		.playstation a:hover img{
+			width:150px;
+			margin-left:calc( 65% - 125px) !important;
+		}
+		footer{
+			position:fixed;
+			bottom:0;
+			left:0;
+			width:100%;
+			height:50px;
+			background-color:#3D3D3D;
+			text-align:center;
+		}
+		footer, a, a:active, a:visited, a:hover{
+			color:white;
+			text-decoration:none;
+		}
+		#IEDGE{
+			display:none;
+			text-align:center;
+			font-size:25px;
+			padding-top:25%;
+		}
