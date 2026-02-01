@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#1B1B3D" />
+    <title>creulcat - Gamer Hub</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="description" content="creulcat - Game Hub, find a quick link to my platforms." />
+    <meta property="og:title" content="creulcat - Gamer Hub">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://creulcat.nl/media/profile.png">
+    <meta property="og:url" content="https://creulcat.nl/">
+    <meta property="og:site_name" content="creulcat - Gamer Hub">
+    <meta property="og:description" content="creulcat - Game Hub, find a quick link to my platforms." />
+</head>
+
+<body>
+
+    <main class="container">
+        <h1 id="tag" class="gamertag" onclick="nameclick()">creulcat</h1>
+
+        <ul class="social-list">
+            <li><a href="https://steamcommunity.com/id/creulcat/" target="_blank" aria-label="Steam"><img
+                        src="media/steam.svg" alt="Steam"></a></li>
+            <li><a href="https://discord.com/users/294205717399994370" target="_blank" aria-label="Discord"><img
+                        src="media/discord.svg" alt="Discord"></a></li>
+            <li><a href="https://socialclub.rockstargames.com/member/creulcat/games" target="_blank"
+                    aria-label="Rockstar"><img src="media/rockstar.svg" alt="Rockstar Games"></a></li>
+            <li><a href="https://store.epicgames.com/en-US/u/0c16f67cab8a4216a283c52947984dcc" target="_blank"
+                    aria-label="Epic Games"><img src="media/epic.svg" alt="Epic Games"></a></li>
+            <li><a href="https://psnprofiles.com/creulcat" target="_blank" aria-label="PlayStation"><img
+                        src="media/playstation.svg" alt="PlayStation"></a></li>
+        </ul>
+
+        <footer class="footer">
+            &copy; 2026 creulcat &dash; All rights reserved.
+        </footer>
+    </main>
+
+    <div id="msg">MEOW</div>
+
+    <script>
+        function nameclick() {
+            console.log("CLCIKED NAME");
+            const msgDiv = document.getElementById('msg');
+
+            msgDiv.classList.remove('opacity');
+            msgDiv.classList.add('opacity');
+            const visibleDuration = 2000;
+            setTimeout(() => {
+                msgDiv.classList.remove('opacity');
+            }, visibleDuration);
+        }
+    </script>
+
+</body>
+
+</html>
