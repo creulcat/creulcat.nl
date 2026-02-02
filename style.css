@@ -1,4 +1,5 @@
 html {
+    background-color: #c60721;
     background: radial-gradient(circle at top, #c60721, #000000);
 }
 
@@ -38,6 +39,7 @@ h1::before {
     inset: 0 0 0 0;
     background: linear-gradient(90deg, rgba(0, 169, 34, 1) 0%, rgba(0, 92, 20, 1) 100%);
     transition: transform .3s ease;
+    z-index: -1;
     height: 0.1rem;
 }
 
