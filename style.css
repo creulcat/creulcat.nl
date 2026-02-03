@@ -2,6 +2,7 @@ html{
 	min-height: 100vh;
     background-color: #C60721;
     background: radial-gradient(circle at top, #c60721, #000000);
+	margin: 0;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+	margin: 0;
 }
 
 .footer {
