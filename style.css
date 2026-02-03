@@ -1,7 +1,5 @@
-html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html{
+	min-height: 100vh;
     background-color: #C60721;
     background: radial-gradient(circle at top, #c60721, #000000);
 }
