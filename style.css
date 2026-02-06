@@ -1,12 +1,10 @@
 html{
-	min-height: 100vh;
-    background-color: #C60721;
+    background-color: #000000;
     background: radial-gradient(circle at top, #c60721, #000000);
-	margin: 0;
 }
 
 body {
-    min-height: 95vh;
+    min-height: 100vh;
     color: white;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: flex;
